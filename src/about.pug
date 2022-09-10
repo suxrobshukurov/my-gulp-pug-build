@@ -1,0 +1,16 @@
+doctype
+html(lang='ru')
+  -
+    const title = 'About'
+  include pug-part/head
+  body
+    include pug-part/header
+    main.page
+      .container.row(style="width: 1200px; margin: 0 auto")
+        .col
+          h1 My name is Sukhrob pug
+          h2 This is my gulp package for layout
+        .col
+          img( src="@img/cover.jpg" alt="Sukhrob avatar" width="150px")
+    include pug-part/footer
+    script(src='js/app.min.js')

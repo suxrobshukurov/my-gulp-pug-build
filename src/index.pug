@@ -1,0 +1,26 @@
+doctype
+html(lang='ru')
+  -
+    const title = 'Главная'
+  include pug-part/head
+  body
+    include pug-part/header
+    main.page
+      .container.row
+        .col
+          h1 My name is Sukhrob pug
+          h2 This is my gulp package for layout
+        .col
+          img( src="@img/cover.jpg" alt="Sukhrob avatar" width="150px")
+        .row
+          .col
+            .swiper.mySwiper
+              .swiper-wrapper
+                .swiper-slide Slide 1
+                .swiper-slide Slide 2
+                .swiper-slide Slide 3
+              .swiper-button-next
+              .swiper-button-prev
+              .swiper-pagination
+    include pug-part/footer
+    script(src='js/app.min.js')

@@ -1,0 +1,50 @@
+@import "fonts";
+
+body {
+  font-family: CormorantUpright;
+  font-size: 50px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 20px;
+  }
+}
+body {
+  & * {
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  img::before {
+    background: url('@img/test-svg1.svg') 0 0 no-repeat;
+    content: '';
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 20px;
+  }
+}
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
+footer {
+  border-top: 2px solid black;
+  .logo-icon {
+    background: url('@img/test-svg1.svg') 0 0 no-repeat;
+    text-rendering: -9;
+  }
+}
